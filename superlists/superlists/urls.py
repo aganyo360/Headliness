@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from superlists import superapp
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('superapp.urls'))
+    path('', include(superapp.urls))
 ]
